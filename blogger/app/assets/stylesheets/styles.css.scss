@@ -1,4 +1,4 @@
-$primary_color: #B5AEE8;
+$primary_color: #3A5B7B;
 
 body {
   background-color: $primary_color;
@@ -9,10 +9,24 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #000;
   img {
     border: none;
   }
+}
+
+.delete_tag {
+  font-size : 10px;
+  text-decoration: none;
+}
+
+th {
+  padding: 10px;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
 }
 
 .clear {

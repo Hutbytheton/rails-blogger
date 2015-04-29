@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 	include ArticlesHelper
 
+	before_filter :require_login, except: [:index, :show]
+
 	def index
 		@articles = Article.all
 	end
@@ -47,7 +49,6 @@ class ArticlesController < ApplicationController
 		redirect_to @article
 	end
 
-	def tag_list=(tags_string)
-	end
+	
 
 end
